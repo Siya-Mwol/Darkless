@@ -4,19 +4,13 @@ const X = require('../config');
 let mergedCommands = [
   "song",
         "insta",
-        "yt360",
-        "yt720",
-        "gdrive",
-        "apk",
-        "mediafire",
-        "xdl",
-        "spotify",
+        
 ];
 
 module.exports = {
   name: "downloader",
   alias: [...mergedCommands],
-  uniquecommands: ["song","insta","gdrive","apk","mediafire","yt360","yt720","xdl","spotify"],
+  uniquecommands: ["song","insta"],
   description: "All file dowloader commands",
   start: async (Xbot, m, { inputCMD, text, doReact, prefix, pushName }) => {
     switch (inputCMD) {
